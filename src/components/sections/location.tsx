@@ -28,11 +28,16 @@ export function LocationTeaser() {
         </div>
 
         <div className="flex-1 w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden relative shadow-inner">
-           <img 
-             src="/images/map.png"
-             alt="Map showing location on Leeds Road"
-             className="w-full h-full object-cover"
-           />
+           <iframe 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2363.3449339965585!2d-1.761047923238686!3d53.67664697237731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdc08e01088e5%3A0x6a10057204753069!2sDeighton%20Mills%2C%20Leeds%20Rd%2C%20Huddersfield%20HD2%201TY!5e0!3m2!1sen!2suk!4v1703690000000!5m2!1sen!2suk" 
+             width="100%" 
+             height="100%" 
+             style={{border:0}} 
+             allowFullScreen 
+             loading="lazy" 
+             referrerPolicy="no-referrer-when-downgrade"
+             className="absolute inset-0 w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
+           ></iframe>
            <div className="absolute inset-0 pointer-events-none border-4 border-white/20 rounded-2xl" />
         </div>
       </div>

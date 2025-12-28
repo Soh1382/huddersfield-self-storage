@@ -1,4 +1,5 @@
 import { Home, Briefcase, GraduationCap, Truck } from "lucide-react";
+import Image from "next/image";
 
 const audiences = [
   {
@@ -50,10 +51,14 @@ export function WhoItsFor() {
           </div>
           
           <div className="flex-1 w-full max-w-lg">
-             {/* Placeholder for "Use case" image */}
-             <div className="aspect-square rounded-2xl bg-brand-dark/5 border border-brand-dark/10 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-linear-to-br from-brand-primary/20 to-transparent" />
-                <p className="text-gray-400 font-medium">Image: People moving boxes</p>
+             <div className="aspect-square rounded-2xl flex items-center justify-center relative overflow-hidden shadow-xl">
+               <Image 
+                 src="/images/moving_boxes.png" 
+                 alt="Family moving boxes into storage" 
+                 fill
+                 className="object-cover"
+               />
+               <div className="absolute inset-0 bg-linear-to-t from-brand-dark/50 to-transparent" />
              </div>
           </div>
         </div>

@@ -98,12 +98,16 @@ export default function ContactPage() {
                
                {/* Map Mockup */}
                <div className="mt-8 h-64 bg-gray-200 rounded-2xl overflow-hidden relative shadow-inner">
-                 <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-300">
-                    <div className="text-center">
-                       <MapPin className="h-10 w-10 mx-auto mb-2 opacity-50" />
-                       <p className="text-sm font-medium">Interactive Map Loading...</p>
-                    </div>
-                 </div>
+                 <iframe 
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2363.3449339965585!2d-1.761047923238686!3d53.67664697237731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdc08e01088e5%3A0x6a10057204753069!2sDeighton%20Mills%2C%20Leeds%20Rd%2C%20Huddersfield%20HD2%201TY!5e0!3m2!1sen!2suk!4v1703690000000!5m2!1sen!2suk" 
+                   width="100%" 
+                   height="100%" 
+                   style={{border:0}} 
+                   allowFullScreen 
+                   loading="lazy" 
+                   referrerPolicy="no-referrer-when-downgrade"
+                   className="absolute inset-0 w-full h-full"
+                 ></iframe>
                </div>
             </div>
 
