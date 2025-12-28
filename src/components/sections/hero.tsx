@@ -12,7 +12,7 @@ const features = [
 
 export function Hero() {
   return (
-    <section className="relative bg-brand-dark text-white pt-20 pb-48 md:pt-32 md:pb-64 overflow-hidden">
+    <section className="relative bg-brand-dark text-white pt-20 pb-24 md:pt-32 md:pb-32 overflow-hidden">
       {/* Background with gradient overlay - Image will go here */}
       <div className="absolute inset-0 bg-brand-dark/90 z-0">
          <img 

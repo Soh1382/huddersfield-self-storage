@@ -78,7 +78,7 @@ export default function ArchivingPage() {
             </div>
 
             {/* Right Column: Image */}
-            <div className="relative h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
               <Image 
                 src="/images/archive_shelves.png" 
                 alt="Organized Archive Shelves" 
