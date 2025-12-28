@@ -30,7 +30,7 @@ export function Hero() {
             <Button asChild size="lg" className="text-base font-semibold shadow-lg shadow-brand-primary/25">
               <Link href="/prices">Get a Quote</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-base font-semibold border-white/20 text-white hover:bg-white/10 hover:text-white">
+            <Button asChild variant="outline" size="lg" className="text-base font-semibold border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white">
               <a href="tel:01484429889">
                 <Phone className="mr-2 h-5 w-5" />
                 Call 01484 429 889
