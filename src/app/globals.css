@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Brand Colors */
+  --color-brand-dark: #0f172a; /* Slate 900 - Deep Navy */
+  --color-brand-primary: #2563eb; /* Blue 600 - Trust Blue */
+  --color-brand-accent: #84cc16; /* Lime 500 - Energetic Accent */
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Utilities for hiding scrollbars etc can go here if needed */
