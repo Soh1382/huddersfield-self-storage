@@ -14,7 +14,7 @@ export function QuoteForm() {
               type="text" 
               id="name" 
               placeholder="Your name"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
+              className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
             />
           </div>
           <div className="space-y-2">
@@ -43,7 +43,7 @@ export function QuoteForm() {
             <label htmlFor="type" className="text-sm font-medium text-gray-700">Storage Type</label>
             <select 
               id="type"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all bg-white"
+              className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
             >
               <option value="personal">Personal Storage</option>
               <option value="business">Business Storage</option>
@@ -55,7 +55,7 @@ export function QuoteForm() {
             <label htmlFor="size" className="text-sm font-medium text-gray-700">Approx. Duration</label>
              <select 
               id="duration"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all bg-white"
+              className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
             >
               <option value="1month">1 Month</option>
               <option value="few_months">A few months</option>
@@ -72,7 +72,7 @@ export function QuoteForm() {
             id="message" 
             rows={3}
             placeholder="Any specific requirements or unit size preference?"
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all resize-none"
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all resize-none"
           />
         </div>
 
@@ -80,7 +80,7 @@ export function QuoteForm() {
           Request Quote
         </Button>
         <p className="text-xs text-center text-gray-500 pt-2">
-          We'll get back to you within 24 hours. No obligation.
+          We&apos;ll get back to you within 24 hours. No obligation.
         </p>
       </form>
     </div>
