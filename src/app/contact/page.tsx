@@ -73,11 +73,11 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-brand-dark text-lg">Opening Hours</h4>
-                      <ul className="text-gray-600 space-y-1">
-                        <li className="flex justify-between w-48"><span>Mon – Fri</span> <span>8:30am – 5:00pm</span></li>
-                        <li className="flex justify-between w-48"><span>Saturday</span> <span>9:30am – 4:30pm</span></li>
-                        <li className="flex justify-between w-48"><span>Sunday</span> <span>11:00am – 4:00pm</span></li>
-                      </ul>
+                      <div className="grid grid-cols-[auto_1fr] gap-x-8 text-gray-600 gap-y-1">
+                        <span className="font-medium">Mon – Fri</span> <span>8:30am – 5:00pm</span>
+                        <span className="font-medium">Saturday</span> <span>9:30am – 4:30pm</span>
+                        <span className="font-medium">Sunday</span> <span>11:00am – 4:00pm</span>
+                      </div>
                     </div>
                   </div>
                 </div>
