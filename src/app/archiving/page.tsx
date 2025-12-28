@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { SecuritySection } from "@/components/sections/security";
 import { FileText, Database, Shield, CheckCircle } from "lucide-react";
 
@@ -77,13 +78,16 @@ export default function ArchivingPage() {
             </div>
 
             <div className="relative h-[500px] bg-gray-100 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-               {/* Placeholder for Archiving Image */}
-               <div className="absolute inset-0 flex items-center justify-center bg-gray-50 text-gray-400">
-                  <div className="text-center">
-                     <FileText className="h-16 w-16 mx-auto mb-4 opacity-20" />
-                     <p className="font-medium">Image: Organized Archive Shelves</p>
-                  </div>
-               </div>
+               {/* Right Column: Image */}
+            <div className="relative h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-2xl">
+              <Image 
+                src="/images/archive_shelves.png" 
+                alt="Organized Archive Shelves" 
+                fill
+                className="object-cover"
+              />
+               <div className="absolute inset-0 bg-linear-to-t from-brand-dark/20 to-transparent" />
+            </div>
             </div>
           </div>
         </div>
