@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, Clock, ShieldCheck, Droplets, Car, CalendarDays } from "lucide-react";
+
+const features = [
+  { icon: Clock, label: "7-Day Access" },
+  { icon: ShieldCheck, label: "CCTV + Alarm" },
+  { icon: Droplets, label: "Clean & Dry" },
+  { icon: Car, label: "Easy Parking" },
+  { icon: CalendarDays, label: "Flexible Terms" },
+];
 
 export function Hero() {
   return (
@@ -36,6 +44,24 @@ export function Hero() {
                 Call 01484 429 889
               </a>
             </Button>
+          </div>
+        </div>
+      </div>
+      
+      {/* Features Strip (moved inside Hero) */}
+      <div className="container relative z-20 mx-auto px-4 mt-16 md:mt-24">
+        <div className="bg-brand-primary py-8 text-white rounded-2xl shadow-xl mx-auto md:max-w-6xl">
+           <div className="px-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-between gap-6 md:gap-4 text-center md:text-left">
+              {features.map((feature, index) => (
+                <div key={index} className="flex flex-col md:flex-row items-center gap-3">
+                  <div className="p-2 bg-white/20 rounded-full">
+                    <feature.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <span className="font-semibold text-sm md:text-base tracking-wide">{feature.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

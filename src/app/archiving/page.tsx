@@ -77,8 +77,7 @@ export default function ArchivingPage() {
               </div>
             </div>
 
-            <div className="relative h-[500px] bg-gray-100 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-               {/* Right Column: Image */}
+            {/* Right Column: Image */}
             <div className="relative h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-2xl">
               <Image 
                 src="/images/archive_shelves.png" 
@@ -87,7 +86,6 @@ export default function ArchivingPage() {
                 className="object-cover"
               />
                <div className="absolute inset-0 bg-linear-to-t from-brand-dark/20 to-transparent" />
-            </div>
             </div>
           </div>
         </div>
